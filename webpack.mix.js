@@ -14,7 +14,6 @@ const tailwincss = require('tailwindcss')
 mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css')
-    .options({
-      processCssUrls: false,
-      postCss: [tailwincss('tailwind.config.js')],
-    });
+    .postCss("resources/css/app.css", "public/css", [
+      require("tailwindcss"),
+    ]);

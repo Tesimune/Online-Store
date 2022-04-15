@@ -1,9 +1,10 @@
-import {createApp} from "vue";
+const Vue = require('vue').default
 
-const navbar = createApp({});
+Vue.component('feed', require('./Feed.vue').default);
+Vue.component('search', require('./Search.vue').default);
+Vue.component('cart', require('./Cart.vue').default);
 
-navbar.component('search', require('./SearchForm.vue').default);
-navbar.component('auth', require('./Auth.vue').default);
-navbar.component('cart', require('./Cart.vue').default);
 
-navbar.mount('#navbar');
+window.app = new Vue({
+    el: "#navbar"
+})
