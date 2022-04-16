@@ -82,7 +82,7 @@
             @yield('content')
         </main>
         <div class="fixed bottom-0 left-0 w-full md:px-5 bg-transparent">
-            <div class="bg-slate-800 rounded-t-lg w-full p-3 shadow-2xl shadow-black">
+            <div class="bg-slate-800 rounded-t-lg w-full p-1 shadow-2xl shadow-black">
                 @include('layouts.navbar')
             </div>
         </div>
