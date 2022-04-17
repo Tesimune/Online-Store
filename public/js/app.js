@@ -27676,19 +27676,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -28169,31 +28156,37 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid text-white text-center" }, [
-    _c("span", { staticClass: "border border-white rounded-full p-2" }, [
-      _c(
-        "svg",
-        {
-          staticClass: "h-6 w-6",
-          attrs: {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "none",
-            viewBox: "0 0 24 24",
-            stroke: "currentColor",
-            "stroke-width": "2",
-          },
-        },
-        [
-          _c("path", {
+  return _c("div", { staticClass: "flex flex-col items-center" }, [
+    _c(
+      "span",
+      {
+        staticClass: "rounded-full p-2 hover:scale-125 transition duration-500",
+      },
+      [
+        _c(
+          "svg",
+          {
+            staticClass: "h-6 w-6",
             attrs: {
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round",
-              d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z",
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              stroke: "currentColor",
+              "stroke-width": "2",
             },
-          }),
-        ]
-      ),
-    ]),
+          },
+          [
+            _c("path", {
+              attrs: {
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z",
+              },
+            }),
+          ]
+        ),
+      ]
+    ),
     _vm._v(" "),
     _c("span", [_vm._v("Cart")]),
   ])
@@ -28221,31 +28214,37 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid text-white text-center" }, [
-    _c("span", { staticClass: "border border-white rounded-full p-2" }, [
-      _c(
-        "svg",
-        {
-          staticClass: "h-6 w-6",
-          attrs: {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "none",
-            viewBox: "0 0 24 24",
-            stroke: "currentColor",
-            "stroke-width": "2",
-          },
-        },
-        [
-          _c("path", {
+  return _c("div", { staticClass: "flex flex-col items-center" }, [
+    _c(
+      "span",
+      {
+        staticClass: "hover:scale-125 transition duration-500 rounded-full p-2",
+      },
+      [
+        _c(
+          "svg",
+          {
+            staticClass: "h-6 w-6",
             attrs: {
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round",
-              d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              stroke: "currentColor",
+              "stroke-width": "2",
             },
-          }),
-        ]
-      ),
-    ]),
+          },
+          [
+            _c("path", {
+              attrs: {
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+              },
+            }),
+          ]
+        ),
+      ]
+    ),
     _vm._v(" "),
     _c("span", [_vm._v("Feed")]),
   ])
@@ -28273,31 +28272,37 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid text-white text-center" }, [
-    _c("span", { staticClass: "border border-white rounded-full p-2" }, [
-      _c(
-        "svg",
-        {
-          staticClass: "h-6 w-6",
-          attrs: {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "none",
-            viewBox: "0 0 24 24",
-            stroke: "currentColor",
-            "stroke-width": "2",
-          },
-        },
-        [
-          _c("path", {
+  return _c("div", { staticClass: "flex flex-col items-center" }, [
+    _c(
+      "span",
+      {
+        staticClass: "hover:scale-125 transition duration-500 rounded-full p-2",
+      },
+      [
+        _c(
+          "svg",
+          {
+            staticClass: "h-6 w-6",
             attrs: {
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round",
-              d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              stroke: "currentColor",
+              "stroke-width": "2",
             },
-          }),
-        ]
-      ),
-    ]),
+          },
+          [
+            _c("path", {
+              attrs: {
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+              },
+            }),
+          ]
+        ),
+      ]
+    ),
     _vm._v(" "),
     _c("span", [_vm._v("Feed")]),
   ])
@@ -28325,31 +28330,37 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid text-white text-center" }, [
-    _c("span", { staticClass: "border border-white rounded-full p-2" }, [
-      _c(
-        "svg",
-        {
-          staticClass: "h-6 w-6",
-          attrs: {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "none",
-            viewBox: "0 0 24 24",
-            stroke: "currentColor",
-            "stroke-width": "2",
-          },
-        },
-        [
-          _c("path", {
+  return _c("div", { staticClass: "flex flex-col items-center" }, [
+    _c(
+      "span",
+      {
+        staticClass: "rounded-full p-2 hover:scale-125 transition duration-500",
+      },
+      [
+        _c(
+          "svg",
+          {
+            staticClass: "h-6 w-6",
             attrs: {
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round",
-              d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              stroke: "currentColor",
+              "stroke-width": "2",
             },
-          }),
-        ]
-      ),
-    ]),
+          },
+          [
+            _c("path", {
+              attrs: {
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+              },
+            }),
+          ]
+        ),
+      ]
+    ),
     _vm._v(" "),
     _c("span", [_vm._v("Feed")]),
   ])
@@ -28377,31 +28388,37 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid text-white text-center" }, [
-    _c("span", { staticClass: "border border-white rounded-full p-2" }, [
-      _c(
-        "svg",
-        {
-          staticClass: "h-6 w-6",
-          attrs: {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "none",
-            viewBox: "0 0 24 24",
-            stroke: "currentColor",
-            "stroke-width": "2",
-          },
-        },
-        [
-          _c("path", {
+  return _c("div", { staticClass: "flex flex-col items-center" }, [
+    _c(
+      "span",
+      {
+        staticClass: "hover:scale-125 transition duration-500 rounded-full p-2",
+      },
+      [
+        _c(
+          "svg",
+          {
+            staticClass: "h-6 w-6",
             attrs: {
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round",
-              d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              stroke: "currentColor",
+              "stroke-width": "2",
             },
-          }),
-        ]
-      ),
-    ]),
+          },
+          [
+            _c("path", {
+              attrs: {
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
+              },
+            }),
+          ]
+        ),
+      ]
+    ),
     _vm._v(" "),
     _c("span", [_vm._v("Search")]),
   ])
@@ -40744,8 +40761,7 @@ Vue.compile = compileToFunctions;
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

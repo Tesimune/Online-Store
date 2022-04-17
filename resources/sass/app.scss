@@ -6,3 +6,15 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.c-input{
+    @apply p-2 rounded outline-none shadow-md shadow-slate-600;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

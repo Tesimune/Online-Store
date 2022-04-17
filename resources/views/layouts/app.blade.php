@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-slate-300">
+<body class="bg-white">
     {{-- <div class="py-8 flex items-center justify-center md:w-2/4 w-2/5 mx-auto bg-blue-300 my-2">
         <h1>ADS</h1>
     </div> --}}
@@ -70,6 +70,11 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+
+                                    <a class="dropdown-item" href="{{ route('home') }}">
+                                        {{ __('Dashboard') }}
+                                    </a>
+
                                 </div>
                             </li>
                         @endguest
@@ -81,11 +86,11 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <div class="fixed bottom-0 left-0 w-full md:px-5 bg-transparent">
-            <div class="bg-slate-800 rounded-t-lg w-full p-1 shadow-2xl shadow-black">
+{{--        <div class=" md:px-5 bg-transparent">--}}
+            <div class="fixed bottom-0 border-t shadow left-0 w-full w-full">
                 @include('layouts.navbar')
             </div>
-        </div>
+{{--        </div>--}}
     </div>
 </body>
 </html>

@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                        @if(auth()->user()->role == 'admin')
+                            <a href="{{ route('product.create') }}" class="p-2 bg-green-500">
+                                Create New Product
+                            </a>
+                        @endif
                 </div>
             </div>
         </div>

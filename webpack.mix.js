@@ -1,3 +1,4 @@
+
 const mix = require('laravel-mix');
 const tailwincss = require('tailwindcss')
 /*
@@ -14,6 +15,11 @@ const tailwincss = require('tailwindcss')
 mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css')
-    .postCss("resources/css/app.css", "public/css", [
-      require("tailwindcss"),
-    ]);
+    .options({
+      processCssUrls: false,
+      postCss: [tailwincss('./tailwind.config.js')]
+    })
+    .disableSuccessNotifications();
+    // .postCss("resources/css/app.css", "public/css", [
+    //   require("tailwindcss"),
+    // ]);
