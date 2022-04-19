@@ -3,7 +3,7 @@
             <a href=""><filters></filters></a>
             <a href=""><search></search></a>
             <a href=""><feed></feed></a>
-            <a href=""><cart></cart></a>
+            <cart></cart>
             <a href=""><about></about></a>
             {{-- <auth :is-logged-in="{{ auth()->user() }}"></auth> --}}
     </nav>
