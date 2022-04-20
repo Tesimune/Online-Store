@@ -7,8 +7,12 @@ use \App\Http\Controllers\ProductController;
 Route::get('/', [ProductController::class, 'index'])->name('product.index');
 Auth::routes();
 
+Route::get('/admin/stats', [App\Http\Controllers\AdminController::class, 'stats'])->name('admin.stats');
+Route::get('/admin/stock', [App\Http\Controllers\AdminController::class, 'stock'])->name('admin.stock');
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
 Route::get('/products/cart', [App\Http\Controllers\ProductController::class, 'cart'])->name('cart');
 
 Route::get('products', [ProductController::class, 'index'])->name('product.index');
