@@ -1,6 +1,7 @@
 
 const mix = require('laravel-mix');
 const tailwincss = require('tailwindcss')
+const path = require("path");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -19,7 +20,11 @@ mix.js('resources/js/app.js', 'public/js')
       processCssUrls: false,
       postCss: [tailwincss('./tailwind.config.js')]
     })
-    .disableSuccessNotifications();
-    // .postCss("resources/css/app.css", "public/css", [
-    //   require("tailwindcss"),
-    // ]);
+    .disableSuccessNotifications()
+    .webpackConfig({
+        resolve: {
+            alias: {
+                '@': path.resolve('resources/assets/sass')
+            }
+        }
+    })

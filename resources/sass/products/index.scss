@@ -1,0 +1,41 @@
+
+.product {
+    @apply relative;
+
+    .thumbnail-wrapper {
+        @apply block h-72 rounded bg-black overflow-hidden;
+        img{@apply w-full h-full hover:scale-110 opacity-60; }
+        a{@apply w-full h-full block}
+    }
+
+    .content {
+        @apply flex flex-col items-center gap-0.5 mt-2 px-2 pb-2;
+
+        .discount{
+            @apply inline-flex items-center justify-center w-10 h-10
+                bg-yellow-800 text-white absolute rounded-full font-bold top-3 right-3;
+        }
+
+        .product-name{
+            @apply uppercase text-center;
+        }
+
+        .product-price{
+            @apply flex items-center gap-4 text-base py-1 justify-center;
+            .new-price{@apply text-yellow-800;}
+            .old-price{@apply opacity-50 line-through}
+        }
+
+        .admin-actions{
+            @apply grid grid-cols-2 gap-1 text-sm;
+            .btn{@apply flex-grow bg-blue-500 text-white text-center py-1;}
+            .btn.delete-btn{@apply bg-red-500;}
+        }
+
+        .cart-add, .cart-remove{
+            @apply bg-yellow-700 hover:scale-105 transition px-3 py-2
+            text-white font-bold text-center rounded;
+        }
+        .cart-remove{@apply bg-red-500;  }
+    }
+}

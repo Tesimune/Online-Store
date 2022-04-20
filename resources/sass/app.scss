@@ -8,12 +8,16 @@
 @import '~bootstrap/scss/bootstrap';
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    @apply antialiased lining-nums transition duration-300;
 }
 
 .c-input{
     @apply p-2 rounded outline-none shadow-md shadow-slate-600;
 }
+
+@import "components/index";
+@import "products/index";
 
 @tailwind base;
 @tailwind components;

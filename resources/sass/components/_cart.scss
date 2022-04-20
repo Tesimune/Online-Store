@@ -1,0 +1,9 @@
+.cart {
+    .cart-button{
+        @apply flex flex-col items-center relative;
+    }
+
+    .cart-icon{
+        @apply rounded-full p-2 hover:scale-125 transition duration-500;
+    }
+}
