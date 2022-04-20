@@ -12250,6 +12250,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(139 92 246 / var(--tw-bg-opacity));
 }
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -12428,6 +12432,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .shadow-slate-600{
   --tw-shadow-color: #475569;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-yellow-600{
+  --tw-shadow-color: #ca8a04;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-yellow-900{
+  --tw-shadow-color: #713f12;
   --tw-shadow: var(--tw-shadow-colored);
 }
 .outline-none{

@@ -19,16 +19,16 @@
 <body class="bg-white">
 
     <div id="app">
-        <nav class="bg-white p-3 shadow shadow-black">
+        <nav class="bg-white border-b p-3">
             <div class="flex justify-between">
-                <a class="" href="{{ url('/') }}">
+                <a class="text-lg" href="{{ url('/') }}">
                     {{ config('app.name', 'Mimash Signature') }}
                 </a>
                 
 
                 <div class="">
                     <!-- Right Side Of Navbar -->
-                    <ul class="flex ">
+                    <ul class="flex gap-2 text-base">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -39,7 +39,7 @@
 
                             @if (Route::has('register'))
                                 <li class="">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
