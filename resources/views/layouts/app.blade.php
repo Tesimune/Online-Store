@@ -26,7 +26,7 @@
                 </a>
                 
 
-                <div class="">
+                <div class="text-lg">
                     <!-- Right Side Of Navbar -->
                     <ul class="flex gap-2 text-base">
                         <!-- Authentication Links -->
@@ -43,28 +43,22 @@
                                 </li>
                             @endif
                         @else
-                            <li class="flex">
-                                <a id="" class="" href="#" role="button">
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="">
-                                    <a class="" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                            <div class="">
+                                <form id="" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                                <select class="bg-transparent outline-none" onChange="window.location.href=this.value">
+                                    <option class="h-10 rounded">{{ Auth::user()->name }}</option>
+                                    <option class="" value="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-
-                                    <a class="" href="{{ route('home') }}">
+                                    </option>
+                                    <option class="" value="{{ route('home') }}">
                                         {{ __('Dashboard') }}
-                                    </a>
-
-                                </div>
-                            </li>
+                                    </option>
+                                </select>
+                            </div>
                         @endguest
                     </ul>
                 </div>
