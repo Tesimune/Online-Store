@@ -48,13 +48,13 @@
                                     @csrf
                                 </form>
                                 <select class="bg-transparent outline-none" onChange="window.location.href=this.value">
-                                    <option class="h-10 rounded">{{ Auth::user()->name }}</option>
+                                    <option>{{ Auth::user()->name }}</option>
                                     <option class="" value="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </option>
-                                    <option class="" value="{{ route('home') }}">
+                                    <option value="{{ route('home') }}">
                                         {{ __('Dashboard') }}
                                     </option>
                                 </select>
@@ -65,7 +65,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
 
